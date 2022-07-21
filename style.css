@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+:root {
+	--color-primary: #d9e7fb;
+	--color-secundary: #c4ceff;
+	--color-tertiary: #5950a1;
+	--color-quaternary: #2b296e;
+	--result: orange;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+html {
+	background: #99a3f1;
+}
+body {
+	padding: max(20px, 5px);
+	background: url(https://admin.larnu.app/static/media/login-background-2.9efad942.png);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+header {
+	text-align: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+header h1,
+header p {
+	margin: 20px 0;
+	color: #c4ceff;
+}
+header h1 {
+	background: var(--color-tertiary);
+	padding: 10px;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+}
+header p {
+	background: rgba(0, 0, 0, 0.801);
+	padding: 6px;
+}
+ul {
+	list-style: none;
+}
+header ul {
+	display: flex;
+}
+header a {
+	text-decoration: none;
+	color: var(--color-tertiary);
+	background: var(--color-secundary);
+	padding: 10px;
+	display: block;
+	margin: 0 5px;
+}
+header a:active {
+	background: var(--color-tertiary);
+	color: #c4ceff;
+}
+main {
+	padding: 20px 0;
+}
+main ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 20px;
+}
+main ul li {
+	background: var(--color-tertiary);
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+	color: var(--color-secundary);
+}
+main ul li:hover {
+	transform: translate(-12px, -13px);
+	-webkit-transform: translate(-12px, -13px);
+	-moz-transform: translate(-12px, -13px);
+	-ms-transform: translate(-12px, -13px);
+	-o-transform: translate(-12px, -13px);
+	box-shadow: var(--color-quaternary) 12px 13px 0 0;
+}
+main ul li a {
+	color: var(--color-secundary);
+}
+main h2 {
+	text-align: center;
+	color: black;
+	background: var(--color-secundary);
+}
+li:target h2 {
+	text-decoration: underline;
+	text-decoration-thickness: 4px;
+}
+main li div,
+main li p {
+	display: none;
+}
+li:target div,
+li:target p {
+	display: block;
+}
+main .instruction {
+	text-align: center;
+	margin: 15px 0;
+}
+main label {
+	width: 100%;
+	display: inline-block;
+}
+main input {
+	width: 90%;
+	padding: 5px 0;
+	margin-left: 20px;
+}
+
+/* reto numero 1 */
+.container-challeng-1 a:hover {
+	background: var(--result);
+	color: white;
+}
+/* reto numero 2 */
+.container-challeng-2 .master:hover {
+	background: var(--result);
+	color: white;
+}
+/* reto numero 3 */
+.container-challeng-3 p:first-child {
+	background: var(--result);
+	color: white;
+}
+/* reto numero 4 */
+.container-challeng-4 input:focus {
+	background: var(--result);
+	color: black;
+}
+/* reto numero 5 */
+.container-challeng-5 p::first-line {
+	background: var(--result);
+	color: white;
+}
+/* reto numero 6 */
+.container-challeng-6 p::first-letter {
+	font-size: 35px;
+	display: inline-block;
+	position: relative;
+	top: 20px;
+	line-height: 10px;
+	background: var(--result);
+	color: white;
+}
+/* reto numero 7 */
+.container-challeng-7 p::after {
+	content: '😂';
+}
+.container-challeng-7 p::before {
+	content: '😂';
+}
+footer {
+	text-align: center;
+}
+footer a {
+	background: var(--color-quaternary);
+	color: var(--color-secundary);
+	font-weight: bold;
+	text-decoration: none;
+	padding: 5px;
+}
+@media screen and (max-width: 450px) {
+	main ul {
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	}
+}
